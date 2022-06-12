@@ -1,0 +1,51 @@
+li { list-style-type: square }
+
+#cena {
+    color: red;
+    font-weight: bold;
+}
+
+.wstęp {
+    font-style: italic;
+}
+
+td img {
+    border-style: solid;
+    border-color: blue;
+}
+
+td img:hover {
+    border-style: solid;
+    border-color: red;
+}
+
+h1~h2 {
+    letter-spacing: 5px;
+}
+
+td[colspan="2"]>p {
+    font-size: small;
+}
+
+p+p {
+    color: gray;
+}
+
+* { 
+    font-family: Tahoma 
+}
+
+body { 
+    margin: 5em 10em 5em 10em; 
+    background-image: url(https://dictionary.cambridge.org/pl/images/thumb/book_noun_001_01679.jpg?version=5.0.222);
+    background-size: 8%;
+    background-repeat: repeat-y
+} 
+
+p { 
+    text-align: justify 
+}
+
+h1 { 
+    color: red;
+}

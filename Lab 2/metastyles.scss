@@ -1,0 +1,140 @@
+$text_size: 16px;
+$title_size: 2*$text_size;
+
+$title_flex_grow: 1;
+$nav_flex_grow: 2*$title_flex_grow;
+
+
+html, p, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana;
+    font-size: $text_size;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+#naglowek {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+}
+
+#tresc {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+#stopka {
+    display:flex;
+    flex-direction:column;
+    height: 100px;
+    background-color: lightgray;
+    border-top: 2px solid black;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#tytul {
+    font-size: $title_size;
+    margin-left: 15px;
+    font-weight: bold;
+    flex-grow: $title_flex_grow;
+}
+
+nav {
+    flex-grow: $nav_flex_grow;
+    align-self: flex-start;
+    display: flex;
+    justify-content: right;   
+}
+
+nav a {
+    width: 75px;
+}
+
+.logo {
+    flex-grow: $title_flex_grow;
+    width: 75px;
+    height: 75px;
+}
+
+article {
+    margin: 15px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;   
+}
+
+.nag {
+    height: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    background-color: lightgray;
+    border-width: 0px 0px 2px 2px;
+    border-style: solid;
+    border-color:black;
+    text-align: center;
+}
+
+article p {
+    padding: 15px;
+}
+
+footer p+p {
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+  
+.content {
+    flex: 1 0 auto;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media all and (max-width: 900px) {
+    main {
+      flex-wrap: wrap;
+    }
+    nav, h1 {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+      width: 30px;
+      height: auto;
+    }
+
+    #naglowek {
+      justify-content: space-between;
+    }
+  
+  }
